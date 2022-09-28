@@ -5,7 +5,7 @@
     }
   },
   "routes": [
-    { "src": "/ini/(.*)", "dest": "/api/ini/$1" },
+    { "src": "/data/(.*)", "dest": "/api/data/$1" },
     { "src": "/(.*)", "dest": "/api/$1" }
   ],
   "env": {
