@@ -5,7 +5,7 @@
     }
   },
   "routes": [
-    { "src": "/data/(.*)", "dest": "/api/data/$1" },
+    { "src": "/data", "dest": "/api/data/api.php" },
     { "src": "/(.*)", "dest": "/api/$1" }
   ],
   "env": {
