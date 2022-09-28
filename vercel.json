@@ -8,6 +8,9 @@
     { "src": "/a/(.*)", "dest": "/api/a/$1" },
     { "src": "/(.*)", "dest": "/api/$1" }
   ],
+  "env": {
+    "NOW_PHP_FOO": "bar3"
+  },
   "build": {
     "env": {
       "NOW_PHP_DEBUG": "1"
