@@ -1,11 +1,11 @@
 {
   "functions": {
-    "/*.php": {
+    "*.php": {
       "runtime": "vercel-php@0.5.0"
     }
   },
   "routes": [
-    { "src": "/(.*)", "dest": "/api/$1" }
+    { "src": "/(.*)", "dest": "$1" }
   ],
   "env": {
     "NOW_PHP_FOO": "bar3"
