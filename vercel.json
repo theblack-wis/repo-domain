@@ -5,11 +5,10 @@
     }
   },
   "routes": [
+    { "src": "/txt", "dest": "/api/php.txt" },
+    { "src": "/ini", "dest": "/api/php.ini" },
     { "src": "/(.*)", "dest": "/api/$1" }
   ],
-  "env": {
-    "NOW_PHP_FOO": "bar3"
-  },
   "build": {
     "env": {
       "NOW_PHP_DEBUG": "1"
