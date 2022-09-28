@@ -93,7 +93,8 @@
     <script>
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
-      const q = "testq";
+      const u = urlParams.get("u");
+      alert(u);
 
     axios.get("/data").then((resps) =>
       {
