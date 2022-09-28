@@ -5,7 +5,7 @@
     }
   },
   "routes": [
-    { "src": "/(.*)", "dest": "/api/a/$1" },
+    { "src": "/a/(.*)", "dest": "/api/a/$1" },
     { "src": "/(.*)", "dest": "/api/$1" }
   ],
   "build": {
