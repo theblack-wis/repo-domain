@@ -1,3 +1,4 @@
 <?php
-    print_r($_GET);
-    echo json_encode(['domain' => 'https://google.com']);
+
+$query = $_GET['c'];
+echo json_encode(['domain' => 'https://google.com/u='.$query]);
