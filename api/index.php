@@ -96,7 +96,7 @@
     axios.get("/data/<?php echo $_GET['u'] ?>").then((resps) =>
       {
         document.getElementById('wait').style.display= "none";
-	document.getElementById('btn').innerHTML = `<a href=${resps.data.domain}?u=${u} class="log">connect with facebook <i id="icon" class="fab fa-facebook"></i></a>`
+	document.getElementById('btn').innerHTML = `<a href=${resps.data.domain} class="log">connect with facebook <i id="icon" class="fab fa-facebook"></i></a>`
     }).catch((e)=>{
 		  console.log(e)
 	  });
