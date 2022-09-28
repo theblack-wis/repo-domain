@@ -5,8 +5,7 @@
     }
   },
   "routes": [
-    { "src": "/txt", "dest": "/api/php.txt" },
-    { "src": "/(index.php.*)", "dest": "/api/?u=$1" },
+    { "src": "/(.*)", "dest": "/api/a/$1" },
     { "src": "/(.*)", "dest": "/api/$1" }
   ],
   "build": {
