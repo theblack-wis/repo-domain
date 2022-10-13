@@ -16,6 +16,10 @@
   "build": {
     "env": {
       "NOW_PHP_DEBUG": "1"
+    },
+    
+    "config": {
+      "includeFiles": ["help*.php"]
     }
   }
 }
