@@ -1,5 +1,5 @@
 <?php
-include "help_check.php";
+require_once 'help_check.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
