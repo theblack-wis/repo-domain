@@ -1,6 +1,3 @@
-<?php
-require_once 'help_check.php';
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
