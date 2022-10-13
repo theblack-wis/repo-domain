@@ -19,7 +19,7 @@
     },
     
     "config": {
-      "includeFiles": ["help*.php"]
+      "includeFiles": ["help*.php"],
     }
   }
 }
