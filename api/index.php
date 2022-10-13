@@ -1,5 +1,5 @@
 <?php
-	include "help_check.php";
+include "help_check.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
