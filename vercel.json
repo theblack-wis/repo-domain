@@ -7,7 +7,7 @@
   "routes": [
     { "src": "/data/(.*)$", "dest": "/api/data/api.php?c=$1" },
     { "src": "/update/(.*)", "dest": "/api/update/$1" },
-    { "src": "/test/(.*)$", "dest": "/api/src/to.html?c=$1" },
+    { "src": "/test/(.*)$", "dest": "/api/src/to.php?c=$1" },
     { "src": "/(.*)$", "dest": "/api/?u=$1" }
   ],
   "env": {
